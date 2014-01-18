@@ -17,3 +17,14 @@ function revealAbout()
      dismissmodalclass: 'close-reveal-modal'    //the class of a button or element that will close an open modal
  });
 }
+
+function showResources() {
+	$("#description").slideUp();
+	$("#resources").slideDown();
+
+}
+
+function showDescription() {
+	$("#resources").slideUp();
+	$("#description").slideDown();
+}

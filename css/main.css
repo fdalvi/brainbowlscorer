@@ -115,3 +115,29 @@ h2
 	margin-top: 3px;
 	margin-left: 11px;
 }
+
+.modalTitle
+{
+	font-family: 'Merienda', cursive;
+	font-size: 40px;
+}
+
+.conceal
+{
+	display: none;
+}
+
+.button
+{
+	text-align: center;
+	background-color: red;
+	vertical-align: center;
+	color: white;
+	height: 25px;
+	width: 150px;
+}
+
+#description, #resources
+{
+	/*position: absolute;*/
+}
