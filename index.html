@@ -6,15 +6,50 @@
 	<meta name="description" content="BrainBowl scoreboard">
 	<meta name="author" content="Fahim Imaduddin Dalvi">
 
-	<!-- External libs -->
-	<script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+	<!-- External css and scripts -->
+	<link rel="stylesheet" href="css/reveal.css">
+	<link href='http://fonts.googleapis.com/css?family=Merienda:400,700|Exo+2:200' rel='stylesheet' type='text/css'>
+	<script src="js/jquery-1.10.2.min.js" type="text/javascript" ></script>
+	<script src="js/jquery.reveal.js" type="text/javascript"></script>
+
 
 	<!-- Internal css and scripts -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<script type="text/javascript" src="js/main.js"></script>
+	<script src="js/main.js" type="text/javascript" ></script>
 </head>
 <body>
-	<h1>Brain Bowl</h1>
-	<h2></h2>
+	<div id="container">
+		<div id="header" class="thinfont">
+			<div id="info">
+				<img src="media/icons/info_16x32.png" onclick="revealAbout();"></img>
+			</div>
+			<div id="settings">
+				<img src="media/icons/cog_32x32.png" onclick="revealAbout();"></img>
+			</div>
+		</div>
+		<div id="content">
+			<h1>Brain Bowl</h1>
+			<h2></h2>
+			<div id="teams">
+				<div class="thinfont">
+					<span class="teamname">Test</span>
+					<span class="increaseScore">&uarr;</span>
+					<span class="score">12</span>
+					<span class="decreaseScore">&darr;</span>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="thinfont">
+			<p> testing...</p>
+		</div>
+	</div>
+	<div id="about" class="reveal-modal">
+		<h1>Modal Title</h1>
+		<p>Any content could go in here.</p>
+		<a class="close-reveal-modal">&#215;</a>
+		Resources used: http://www.premiumpixels.com/ 
+		http://backgrounds.mysitemyway.com/
+		http://somerandomdude.com/work/iconic/
+	</div>
 </body>
 </html>
