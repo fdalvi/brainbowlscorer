@@ -61,10 +61,19 @@ h2
 	font-family: 'Exo 2', sans-serif;
 }
 
-.increaseScore, .decreaseScore, .score
+.teamname
+{
+	float:left;
+}
+
+.score
 {
 	border: 2px solid #dadada;
 	border-radius: 7px;
+}
+
+.increaseScore, .decreaseScore, .score
+{
 	font-family:  'Exo 2', sans-serif;
 	font-size: 30px;
 	text-align: center;
@@ -72,17 +81,30 @@ h2
 	height: 45px;
 	float: right;
 	margin-left: 5px;
+	background-repeat: no-repeat;
+	background-size: 100%; 
+}
+
+.teamSeparator
+{
+	clear:both;
+	float: none;
+	height: 20px;
+}
+
+.increaseScore
+{
+	background-image: url("../media/icons/arrow_up_alt1_32x32.png");
+}
+
+.decreaseScore
+{
+	background-image: url("../media/icons/arrow_down_alt1_32x32.png");
 }
 
 .score
 {
 	font-size: 35px;
-}
-
-.increaseScore, .decreaseScore
-{
-	background-color: red;
-	border-color: red;
 }
 
 #settings, #info
@@ -137,7 +159,76 @@ h2
 	width: 150px;
 }
 
+@-webkit-keyframes thumb {
+	0% { -webkit-transform: scale(1); }
+	50% { -webkit-transform: scale(0.8); }
+	100% { -webkit-transform: scale(1); }
+}
+
+#settings img:hover
+{
+	-webkit-animation-name: thumb;
+	-webkit-animation-duration: 200ms;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+#info img:hover
+{
+	-webkit-animation-name: thumb;
+	-webkit-animation-duration: 200ms;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.increaseScore:hover
+{
+	-webkit-animation-name: thumb;
+	-webkit-animation-duration: 500ms;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
+.decreaseScore:hover
+{
+	-webkit-animation-name: thumb;
+	-webkit-animation-duration: 500ms;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+}
+
 #description, #resources
 {
 	/*position: absolute;*/
+}
+
+.bordered
+{
+	border: white 1px solid;
+}
+
+@-webkit-keyframes spaceboots {
+	0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
+	10% { -webkit-transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { -webkit-transform: translate(-3px, 0px) rotate(1deg); }
+	30% { -webkit-transform: translate(0px, 2px) rotate(0deg); }
+	40% { -webkit-transform: translate(1px, -1px) rotate(1deg); }
+	50% { -webkit-transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { -webkit-transform: translate(-3px, 1px) rotate(0deg); }
+	70% { -webkit-transform: translate(2px, 1px) rotate(-1deg); }
+	80% { -webkit-transform: translate(-1px, -1px) rotate(1deg); }
+	90% { -webkit-transform: translate(2px, 2px) rotate(0deg); }
+	100% { -webkit-transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.shake {
+	-webkit-animation-name: spaceboots;
+	-webkit-animation-duration: 0.8s;
+	-webkit-transform-origin:50% 50%;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
 }

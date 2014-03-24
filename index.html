@@ -24,7 +24,7 @@
 				<img src="media/icons/info_16x32.png" onclick="revealAbout();"></img>
 			</div>
 			<div id="settings">
-				<img src="media/icons/cog_32x32.png" onclick="revealAbout();"></img>
+				<img src="media/icons/cog_32x32.png" onclick="toggleEditMode();"></img>
 			</div>
 		</div>
 		<div id="content">
@@ -32,16 +32,42 @@
 			<h2></h2>
 			<div id="teams">
 				<div class="thinfont">
-					<span class="teamname">Test</span>
-					<span class="increaseScore">&uarr;</span>
-					<span class="score">12</span>
-					<span class="decreaseScore">&darr;</span>
+					<div class="teamname">Team1</div>
+					<div class="increaseScore"></div>
+					<div class="score">0</div>
+					<div class="decreaseScore"></div>
 				</div>
+				<div class="teamSeparator"></div>
+				<div class="thinfont">
+					<div class="teamname">Team2</div>
+					<div class="increaseScore"></div>
+					<div class="score">0</div>
+					<div class="decreaseScore"></div>
+				</div>
+				<div class="teamSeparator"></div>
+				<div class="thinfont">
+					<div class="teamname">Team3</div>
+					<div class="increaseScore"></div>
+					<div class="score">0</div>
+					<div class="decreaseScore"></div>
+				</div>
+				<div class="teamSeparator"></div>
+				<div class="thinfont">
+					<div class="teamname">Team4</div>
+					<div class="increaseScore"></div>
+					<div class="score">0</div>
+					<div class="decreaseScore"></div>
+				</div>
+				<div class="teamSeparator"></div>
 			</div>
 		</div>
 		<div id="footer" class="thinfont">
 			<p> testing...</p>
 		</div>
+	</div>
+	<div id="settings-dialog" class="reveal-modal">
+		<a class="close-reveal-modal">&#215;</a>
+		<p class="modalTitle">Settings</p>
 	</div>
 	<div id="about" class="reveal-modal">
 		<a class="close-reveal-modal">&#215;</a>
