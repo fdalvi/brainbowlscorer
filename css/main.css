@@ -217,7 +217,9 @@ h2
 
 .bordered
 {
-	border: white 1px solid;
+	border: #444444 2px dashed;
+	padding: 3px;
+	border-radius:5px;
 }
 
 @-webkit-keyframes spaceboots {

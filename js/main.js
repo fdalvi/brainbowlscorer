@@ -35,13 +35,13 @@ function toggleEditMode()
 	{
 		$(".teamname").attr('contentEditable','true');
 		$(".teamname").addClass('shake');
-		//$(".teamname").addClass('bordered');
+		$(".teamname").addClass('bordered');
 	}
 	else
 	{
 		$(".teamname").attr('contentEditable','false');
 		$(".teamname").removeClass('shake');
-		//$(".teamname").removeClass('bordered');
+		$(".teamname").removeClass('bordered');
 	}
 }
 
