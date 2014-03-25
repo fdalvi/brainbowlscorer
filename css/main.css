@@ -1,14 +1,8 @@
 body
 {
 	/* Background from http://backgrounds.mysitemyway.com/ */
-	background-image: url("../media/background/icon_13678.svg");/*background.jpg");*/
-
-	background-color: #efefef;
-
-	background-repeat: no-repeat;
-	background-size: 30%;
-	background-position: center 60%;
-
+	background-image: url("../media/background.jpg");
+	background-repeat: repeat;
 }
 
 /* Responsive Footer */
@@ -39,21 +33,19 @@ body {
 h1, h2
 {
 	font-family: 'Merienda', cursive;
-	color: red;
 	text-align: center;
 }
 
-
 h1
 {
-	/*margin-top: -10px;*/
 	font-size: 50px;
+	color: red;
 }
 
 h2
 {
-	color: #444444;
 	margin-top: -40px;
+	color: white;
 }
 
 #teams
@@ -61,7 +53,7 @@ h2
 	margin-left: auto;
 	margin-right: auto;
 	width: 60%;
-	color: #444444;
+	color: white;
 	font-size: 30px;
 }
 
@@ -217,9 +209,9 @@ h2
 
 .bordered
 {
-	border: #444444 2px dashed;
+	border: white 2px dashed;
+	border-radius: 5px;
 	padding: 3px;
-	border-radius:5px;
 }
 
 @-webkit-keyframes spaceboots {
